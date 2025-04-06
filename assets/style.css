@@ -1,0 +1,361 @@
+@font-face {
+  font-family: Gilroy;
+  src: url(./fonts/Gilroy-Bold.otf);
+}
+body {
+  font-family: 'Gilroy', sans-serif;
+}
+* {
+  font-family: 'Gilroy', sans-serif;
+}
+:root {
+  --blue: #58c2f9;
+  --btnfont: 26px;
+  --font-family: 'Gilroy';
+}
+html,
+body {
+  margin: 0px auto;
+  padding: 0px;
+  background-color: black;
+  color: white;
+  font-family: Gilroy;
+  font-weight: 300; 
+  width: 100%; 
+  max-width: 1200px; 
+  margin-left: auto; 
+  margin-right: auto; 
+}
+.header {
+  z-index: 1000; 
+  transition: top 0.3s;
+  position: relative;
+  width: 100%;
+}
+.heroBanner{
+  text-align: center;
+}
+.heroBanner h2{
+  margin-block-start: 0px;
+}
+.mypick{
+  margin: 30px 0px;
+}
+.header_back__30UYF {
+  cursor: pointer;
+  background-color: #33333375;
+  border-radius: 50%;
+}
+h1 {
+  font-family: Gilroy;
+}
+h2,
+h3,
+h4,
+h5 {
+  font-size: 60px;
+  margin-block-end: 0px;
+  font-family: Gilroy;
+}
+p{
+  font-size: 30px;
+  margin-block-start: 10px;font-family: Gilroy;
+}
+a{
+  text-decoration: none;
+}
+.img-fuild {
+  width: 100%;
+  margin: auto;
+}
+img.img-fuild.myphoto {
+  width: 90% !important;
+  margin: auto !important;
+  display: block;
+}
+.main {
+  padding: 0px 20px;
+}
+.about{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 30px 0px;
+}
+.about .aboutme:first-child {
+  flex: 0 0 60%;
+}
+
+.about .aboutme:last-child {
+  flex: 0 0 30%;
+}
+.dflex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header_back__30UYF {
+  width: 50px;
+  height: 50px;
+}
+
+.skillItem img {
+  width: 60px;
+  height: 60px;
+  background: white;
+  object-fit: contain;
+  padding: 10px;
+  margin: 20px; 
+  border-radius: 10px;
+  box-shadow: 5px 5px 5cap 0px #ffffff;
+}
+
+.header .btn {
+  background: linear-gradient(to right, #58c2f9, #58c2f9);
+  border: none;
+  cursor: pointer;
+}
+.aboutme .btn {
+  margin-top: 30px;
+  margin-right: 40px;
+  border: 0px solid;
+}
+.skillItem {
+  margin-left: -20px;
+}
+.skill .btn {
+  font-size: 22px;
+  margin-top: 30px;
+}
+.workItems {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px; 
+  background: #ffffff;
+  padding: 30px;
+  box-shadow: 5px 5px 5cap 0px #ffffff;
+}
+
+.workItems img {
+  width: 100%;
+  box-sizing: border-box; 
+}
+.workbtn {
+  width: 20%;
+  float: right;
+  margin: 30px 0px;
+}
+
+span.workbtn {
+  color: white;
+  font-size: 31px;
+}
+.workart {
+  margin-top: 100px;
+}
+.workart .artitem {
+  border-top: 1px solid white;
+  padding: 15px 10px;
+}
+.btn {
+  background: transparent;
+  border: 1px solid white;
+  color: #ffffff;
+  padding: 12px 20px;
+  border-radius: 5px;
+  text-transform: capitalize;
+}
+
+.slider-container {
+  width: 100%;
+  position: relative;
+  background-color: #000;
+  padding: 10px 0;
+  overflow-x: hidden; /* Hide overflow */
+}
+
+.slide {
+  display: inline-block;
+  white-space: nowrap; /* Keep content on one line */
+  animation: scrollText 10s linear infinite; /* Animate the whole slide */
+}
+
+.slide span {
+  display: inline-block;
+  font-size: 80px;
+  font-weight: bold;
+  color: white;
+  padding-right: 30px; /* Space between repeated sets */
+}
+
+/* Remove default margins */
+body, p, span {
+  margin: 0;
+}
+
+@keyframes scrollText {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); /* Move half of doubled content */
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 30px 0px;
+}
+
+
+.artitem {
+  transition: background 0.3s ease, color 0.3s ease;
+  position: relative; /* Ensure relative positioning for absolute child */
+  overflow: hidden; /* Ensure clipping of sliding-div */
+  z-index: 29;
+}
+.artitem a {
+  color: white;
+  text-decoration: none;
+  display: flex; /* Added this */
+  justify-content: space-between; /* This works now */
+  align-items: center; /* Optional: vertically center items */
+  width: 100%; /* Ensures full width for spacing */
+}
+
+.artitem p {
+  font-size: 22px;
+}
+.artitem:hover p {
+  color: #000; /* Change paragraph text color to black on hover */
+  z-index: 90000; /* Ensure text is above the sliding-div */
+  position: relative; /* Create a new stacking context */
+  font-family: "boldfont";
+}
+
+.sliding-div {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0%;
+  background-color: #fff;
+  transition: width 1.3s cubic-bezier(0.19, 1, 0.22, 1);
+  z-index: 29999; /* Ensure sliding-div is below the text */
+}
+
+.artitem:hover .sliding-div {
+  width: 100%;
+}
+
+.getInTouch .mail, .work span {
+  color: #ea4335;
+}
+
+.getInTouch .instagram {
+  background: linear-gradient(to right, #455ec2, #e74a4f, #f3c74e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.getInTouch .linkedIn, .workart span {
+  color: #44d5e9;
+}
+.getInTouch span:hover {
+  text-decoration: line-through !important;
+}
+a {
+  color: inherit !important;
+}
+.getInTouch p {
+  font-size: 100px;
+}
+
+.btnmobile{
+  display: none;
+}
+@media only screen and (max-width: 650px) {
+  img.img-fuild.myphoto {
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+    margin-top: 35px !important;
+}
+
+  .workItems {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .workart p {
+    text-align: center;
+  }
+
+  .workart p:first-of-type {
+    text-align: left;
+    padding-right: 30px;
+  }
+
+  .workart p:last-of-type {
+    font-size: 14px;
+    text-align: right;
+  }
+  .artitem p {
+    font-size: 16px;
+  }
+  section {
+    padding: 20px 0px;
+  }
+  .getInTouch p {
+    font-size: 50px;
+  }
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-size: 35px;
+  }
+  .workbtn {
+    margin-top: 40px;
+    width: 65%;
+    text-align: right;
+    font-family: 22px;
+  }
+  .skill .btn {
+    margin-bottom: 10px;
+  }
+  .skillItem img {
+    box-shadow: 2px 2px 2cap 0px #ffffff;
+  }
+
+  .slide span {
+    display: inline-block;
+    font-size: 35px;}
+
+    .slider-container {
+      margin: -30px 0px;
+  }
+  p {
+    font-size: 24px;}
+    .aboutme .btn {
+      margin-top: 20px;
+    }
+    .btndek{
+      display: none;
+    }
+    .btnmobile{
+      font-weight: 700;
+    }
+    .btnmobile{
+      display: block;
+    }
+    .aboutme {
+      flex: 0 0 100% !important;
+    }
+}
+
+@media (max-width: 768px) {
+  body {
+    width: 100%; /* Ensure full width on smaller screens */
+  }
+}
+

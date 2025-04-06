@@ -1,0 +1,386 @@
+body {
+  overflow-x: hidden;
+}
+
+:root {
+  --theme: #154d57;
+  --fontColor: #000000;
+  --font: 47px;
+  --smallPara: 14px;
+  --normalPara: 18px;
+  --headingSmall: 25px;
+  --white: #ffffff;
+}
+.themeColor {
+  background-color: var(--theme);
+  color: var(--white);
+}
+.headingSmall {
+  font-size: var(--headingSmall);
+}
+p {
+  font-size: var(--normalPara);
+}
+h1,
+h2,
+h3,
+h4 {
+  font-size: var(--font);
+  font-weight: 100;
+}
+section,
+.container-fluid {
+  margin: 0px;
+  padding: 0px;
+}
+.head_socail ul {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.head_socail ul li {
+  padding: 0px 5px;
+  font-size: 24px;
+  color: var(--theme);
+  list-style: none;
+}
+
+.bg-body-tertiary {
+  --bs-bg-opacity: 1;
+  background-color: var(--white) !important;
+}
+#header {
+  box-shadow: 2px 2px 10px rgba(65, 63, 63, 0.041);
+  border: 10px 10px solid black;
+  width: 100%;
+  background-color: var(--white);
+}
+.hero-banner {
+  background-image: url("./img/Leaf.jpg");
+  height: 569px;
+  background-size: cover;
+  padding: 0px;
+  background-position: bottom;
+}
+.hero_img {
+  width: 632px;
+  height: 569px;
+  object-fit: cover;
+}
+#banner_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 569px;
+  padding: 0px 15vh;
+}
+.banner_overlay {
+  height: auto;
+  background-color: rgba(88, 87, 89, 0.03);
+}
+#banner_text h1 {
+  font-size: 54px;
+  color: var(--theme);
+  line-height: 69px;
+}
+
+#banner_text p {
+  color: var(--fontColor);
+}
+
+#banner_text button {
+  background-color: var(--theme);
+  color: aliceblue;
+  width: 35%;
+  height: 60px;
+  text-align: center !important;
+}
+
+.aboutUs .container {
+  width: 700px;
+  margin: auto;
+}
+
+.aboutUs .container img {
+  width: 12%;
+  margin: auto;
+  display: block;
+}
+.aboutUs .container h2,
+.aboutUs .container p {
+  color: var(--white);
+  text-align: center;
+}
+
+.aboutUs .container button {
+  color: var(--theme);
+  padding: 8px 15px;
+  text-align: center !important;
+  transform: translate(-100%), -100%;
+  background-color: var(--white);
+}
+
+.team_img img {
+  height: 300px;
+  width: 100%;
+  margin: auto;
+  display: block;
+}
+.teamSection span {
+  border-bottom: 2px solid var(--theme);
+}
+.spanBorder {
+  border-bottom: 2px solid var(--theme);
+}
+.teamImgborder {
+  border: 0.5px solid var(--theme);
+  padding: 20px;
+  margin-bottom: 30px;
+}
+.teamSection p {
+  color: var(--theme);
+  font-size: var(--smallPara);
+}
+
+.teamSection {
+  padding: 20px;
+}
+
+.btn-success {
+  background-color: var(--theme);
+  padding: 10px 25px;
+  text-transform: uppercase;
+}
+
+.teamSection h4 {
+  font-size: var(--headingSmall);
+  color: var(--theme);
+}
+
+.founder {
+  background: var(--white);
+  border-top: 1.5px solid var(--theme);
+}
+
+.starList {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+.starList li::before {
+  content: "⟡";
+  margin-right: 10px;
+  font-size: 18px;
+}
+.testimonial img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: auto;
+  display: block;
+}
+
+.whyChoose {
+  background-image: url("./img/Leaf(1).jpg");
+  height: auto;
+  background-size: cover;
+  padding: 0px;
+  background-position: bottom;
+  border: 1px solid var(--theme);
+}
+.whyChoose h1 {
+  color: var(--theme);
+}
+
+.whyChoose p {
+  color: var(--theme);
+}
+
+.whyChooseSection {
+  background-color: var(--white);
+  border: 1px solid var(--theme);
+}
+
+.whyChooseSection img {
+  width: 30%;
+}
+
+.accordion-button::after {
+  content: "\002B"; /* Unicode for '+' */
+  font-size: 20px;
+  font-weight: bold;
+  background-image: none !important;
+}
+
+.accordion-button[aria-expanded="true"]::after {
+  content: "\2212"; /* Unicode for '-' */
+}
+.btn-success {
+  display: inline-block;
+}
+.accordion-button:not(.collapsed) {
+  background-color: #cfe2ff00;
+}
+.accordion {
+  --bs-accordion-border-color: #253a50;
+  --bs-accordion-active-bg: #cfe2ff00 !important;
+}
+.faqs {
+  border-bottom: 1.5px solid var(--theme);
+}
+.blog {
+  background-color: #fefaf7;
+}
+.blogGrid {
+  border: 1px solid var(--theme);
+}
+
+.blogGrid h4 {
+  font-size: 18px;
+  color: #000000;
+  font-weight: 400;
+}
+.blogGrid img {
+  margin-bottom: 10px;
+}
+.blogGrid img:hover {
+  filter: grayscale(2);
+}
+.blogGrid p {
+  font-size: 16px;
+  color: #000000;
+  font-weight: 400;
+}
+
+.blogGrid button {
+  border: none;
+  background-color: transparent;
+  margin-bottom: 10px;
+}
+.footer {
+  background-color: var(--theme);
+  color: var(--white);
+  text-align: center;
+}
+
+.footer ul li {
+  list-style-type: none;
+  padding: 10px 0px;
+}
+.footerSocial a li i {
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+.btn_white {
+  background-color: var(--white);
+}
+.head_socail h2 {
+  font-size: 30px;
+
+  padding: 20px;
+}
+
+.social_border {
+  border-left: 1px solid var(--white);
+  border-right: 1px solid var(--white);
+}
+
+.head_socail ul {
+  margin-bottom: -3px;
+}
+@media (max-width: 665px) {
+  ol,
+  ul {
+    padding-left: 0rem;
+  }
+  .hero-banner {
+    background-image: url("./img/Leaf.jpg");
+    height: auto;
+    background-size: cover;
+  }
+  .hero_img {
+    width: 100%;
+    height: auto;
+  }
+
+  #banner_text {
+    height: auto;
+    padding: 15px;
+  }
+
+  .aboutUs .container {
+    width: auto;
+    margin: auto;
+  }
+  .aboutUs {
+    padding: 20px 10px !important;
+  }
+  #banner_text h1 {
+    font-size: var(--headingSmall);
+    line-height: 30px;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-size: var(--headingSmall);
+  }
+
+  .team {
+    padding: 20px 0px !important;
+  }
+  .founder_text {
+    padding: 40px 15px !important;
+  }
+  .founder_text li {
+    padding: 5px 0px;
+  }
+  #banner_text button {
+    width: 50%;
+    margin-top: 20px;
+  }
+
+  .whyChooseSection,
+  .blogGrid {
+    margin-bottom: 10px;
+  }
+  #faqs {
+    height: 60vh !important;
+  }
+}
+.CustomMarqee {
+  width: 100%;
+  overflow: hidden; /* Hide content that goes outside the container */
+  position: relative; /* Container for positioning */
+}
+
+.marqueeContent {
+  display: flex; /* Align text horizontally */
+  animation: marqueeDesign 10s linear infinite; /* Continuous animation */
+}
+
+.CustomMarqee h2 {
+  font-size: 44px;
+  color: var(--theme);
+  font-weight: 100;
+  text-transform: uppercase;
+  margin-top: 40px;
+  font-family: "ivypresto-headline";
+  white-space: nowrap; /* Prevent line breaks in text */
+  display: inline-block; /* Keep text inline */
+  padding-right: 10px;
+}
+
+@keyframes marqueeDesign {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(
+      -50%
+    ); /* Move the entire content by 50% of the container width */
+  }
+}
